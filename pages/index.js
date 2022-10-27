@@ -14,7 +14,7 @@ export default function Home() {
   const [cardData, setCardData] = useState(data);
   const [openFilter, setOpenFilter] = useState(false);
   const [filterArray, setFilterArray] = useState([]);
-
+  console.log(openFilter);
   //Handle the error state
   if (error) return <div>Failed to load</div>;
   //Handle the loading state

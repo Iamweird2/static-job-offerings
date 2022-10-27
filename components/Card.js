@@ -48,7 +48,7 @@ export default function Card({
       </div>
       <div className=" border-b-[1px] sm:border-0 border-slate-500 sm:mr-auto sm:flex sm:flex-col sm:justify-center sm:gap-2">
         <div className="mb-3 sm:mb-0 font-medium text-md">
-          <span className="text-headerColor  mr-6 capitalize">
+          <span className="	 text-headerColor  mr-6 capitalize">
             {eachData.company}
           </span>
           {eachData.isnew && (
@@ -62,7 +62,7 @@ export default function Card({
             </span>
           )}
         </div>
-        <div className=" font-bold text-slate-800  mb-2 sm:mb-0">
+        <div className="hover:text-headerColor font-bold text-slate-800  mb-2 sm:mb-0">
           {eachData.position}
         </div>
         <div className="mb-4 sm:mb-0">
@@ -77,14 +77,14 @@ export default function Card({
         {eachData.role && (
           <span
             onClick={() => handleClick(eachData.role)}
-            className="cursor-pointer  border rounded-sm py-1 px-1 bg-teal-100 text-sm font-bold text-teal-700 my-4"
+            className="hover:bg-headerColor hover:text-white md:p-2 md:rounded-lg md:text-lg cursor-pointer  border rounded-sm py-1 px-1 bg-teal-100 text-sm font-bold text-teal-700 my-4"
           >
             {eachData.role}
           </span>
         )}
         {eachData.level && (
           <span
-            className="cursor-pointer border rounded-sm py-1 px-1 bg-teal-100 text-sm font-bold text-teal-700 my-4"
+            className="hover:bg-headerColor hover:text-white md:p-2 md:rounded-lg md:text-lg cursor-pointer border rounded-sm py-1 px-1 bg-teal-100 text-sm font-bold text-teal-700 my-4"
             onClick={() => handleClick(eachData.level)}
           >
             {eachData.level}
@@ -96,7 +96,7 @@ export default function Card({
             <span
               key={v4()}
               onClick={() => handleClick(eachLangauges)}
-              className="cursor-pointer border rounded-sm py-1 px-1 bg-teal-100 text-sm font-bold text-teal-700 my-4"
+              className="hover:bg-headerColor hover:text-white md:p-2 md:rounded-lg md:text-lg cursor-pointer border rounded-sm py-1 px-1 bg-teal-100 text-sm font-bold text-teal-700 my-4"
             >
               {eachLangauges}
             </span>
@@ -107,7 +107,7 @@ export default function Card({
             <span
               key={v4()}
               onClick={() => handleClick(eachTools)}
-              className="cursor-pointer border rounded-sm py-1 px-1 bg-teal-100 text-sm font-bold text-teal-700 my-4"
+              className="hover:bg-headerColor hover:text-white md:p-2 md:rounded-lg md:text-lg cursor-pointer border rounded-sm py-1 px-1 bg-teal-100 text-sm font-bold text-teal-700 my-4"
             >
               {eachTools}
             </span>

@@ -164,13 +164,13 @@ export default function Filter({
           return (
             <div
               key={v4()}
-              className="inline-flex flex-row items-center gap-3 bg-filterTablets  h-9 rounded-md pl-2 overflow-hidden"
+              className="group inline-flex flex-row items-center gap-3 bg-filterTablets  h-9 rounded-md pl-2 overflow-hidden"
             >
               <span className=" font-bold text-headerColor">{element}</span>
 
               <div
                 onClick={() => removeFilter({ element })}
-                className="cursor-pointer w-8 h-full  relative mr-auto bg-headerColor grid place-content-center"
+                className="group-hover:bg-featured cursor-pointer w-8 h-full  relative mr-auto bg-headerColor grid place-content-center"
               >
                 <div className="relative w-4 h-4">
                   <Image
@@ -186,7 +186,7 @@ export default function Filter({
         })}
       </div>
       <div
-        className="cursor-pointer  text-smallTextColors text-lg capitalize"
+        className="cursor-pointer hover:text-headerColor text-smallTextColors text-lg capitalize"
         onClick={() => (
           setFilterArray([]), setOpenFilter(false), setCardData(originalData)
         )}

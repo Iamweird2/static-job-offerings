@@ -158,7 +158,7 @@ export default function Filter({
     }
   }
   return (
-    <div className="flex flex-row gap-3 w-[80%] xl:w-[70] mx-[10%] bg-white p-5 absolute bottom-0  translate-y-1/2 justify-between items-center rounded-md">
+    <div className="flex flex-row gap-3 w-[80%]  mx-[10%] bg-white p-5 absolute bottom-0  translate-y-1/2 justify-between items-center rounded-md">
       <div className="flex flex-row flex-wrap gap-3">
         {filterArray.map((element) => {
           return (

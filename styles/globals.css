@@ -6,7 +6,7 @@
 
 @layer components {
   .card-basic {
-    @apply w-[90%] mx-auto bg-white rounded-md relative pt-10 sm:py-5 px-5 border-l-[5px] md:flex sm:gap-4 sm:items-center;
+    @apply w-[90%] xl:w-[70%] mx-auto bg-white rounded-md relative pt-10 sm:py-5 px-5 border-l-[5px] md:flex sm:gap-4 sm:items-center;
   }
 }
 html,

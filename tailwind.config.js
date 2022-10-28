@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "mobile-header": "url('../public/bg-header-mobile.svg')",
-        "desktop-header": "url('../public/bg-header-desktop.svg')",
+        "mobile-header": "url('/public/bg-header-mobile.svg')",
+        "desktop-header": "url('/public/bg-header-desktop.svg')",
       },
       colors: {
         headerColor: "hsl(180, 29%, 50%)",

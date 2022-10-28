@@ -11,7 +11,9 @@ export default function Home() {
   const [filterArray, setFilterArray] = useState([]);
 
   useEffect(() => {
-    fetch("https://my-json-server.typicode.com/Iamweird2/static-job-offerings")
+    fetch(
+      "https://my-json-server.typicode.com/Iamweird2/static-job-offerings/resources"
+    )
       .then((res) => {
         return res.json();
       })
